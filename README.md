@@ -2,4 +2,6 @@ global_liquidity.py​ — This script can manually calculate Bloomberg's Global
 
 run_usdt.R​ — Loads data and runs an IV regression with the deviation of USDT from $1 as the dependent variable, to see which variables are correlated with USDT price fluctuation.
 
+run_usdt_difference_mkt_share.R​ — The market share of USDT maybe unit root so take first order difference to USDT_market_share. Then the effects of US treasury in reserve will be more clear.
+
 run_hourly_data.R​ — Loads manually downloaded 10‑minute USDT prices from Bloomberg, uses a three‑month rolling window to estimate USDT standard deviation, then computes the daily number of minutes exceeding 1, 2, and 3 standard deviations, to examine which factors increase the duration of USDT price deviation.
